@@ -1,0 +1,53 @@
+header {
+    display: block;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    font-family: 'Shrikhand', "Cursive";
+}
+
+footer {
+    background-color: #3E4640;
+    color: white;
+    width: 100%;
+    font-family: 'Roboto';
+    padding-bottom: 30px;
+    margin-top: -14px;
+
+        a {
+            color: white;
+        }
+
+            p {
+                margin-left: 4%;
+            }
+
+                img {
+                    width: 130px;
+                    margin-left: 4%;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+
+                    i {
+                        width: 20px;
+                    }
+
+}
+
+.footer {
+    margin-top: -8px;
+
+
+    .footer__icone {
+        width: 80%;
+        align-items: center;
+        vertical-align: middle;
+        display: inline-flex;
+        height: 18px;
+        margin-bottom: 10px;
+        margin-left: 4%;
+    }
+}
