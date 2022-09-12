@@ -3,6 +3,18 @@ header {
     position: relative;
 }
 
+header a {
+    margin-left: 4%;
+    height: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: auto;
+}
+
 .logo {
     text-align: center;
     font-family: 'Shrikhand', "Cursive";

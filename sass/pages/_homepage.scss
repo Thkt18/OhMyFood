@@ -52,8 +52,8 @@
         background-color: #F7F7F7;
 
         &__numero {
-            background-color: #9356DC;
-            border: 1px solid #9356DC;
+            background-color: $color_primaire;
+            border: 1px solid $color_primaire;
             border-radius: 100%;
             width: 25px;
             height: 25px;
@@ -67,12 +67,16 @@
     }
 }
 
-.fonctionnement h3 {
+.fonctionnement h4 {
         margin-left: 20px;
 }
 
 .fonctionnement i {
     margin-left: 20px;
+}
+
+.fa-store {
+    color: $color_primaire;
 }
 
 .restaurants {
@@ -81,6 +85,10 @@
     padding-bottom: 30px;
     background-color: #F5F0F7;
     font-family: 'Roboto';
+}
+
+.restaurants h2 {
+    margin-left: 4%;
 }
 
 .restaurants__menu {

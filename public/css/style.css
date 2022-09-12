@@ -2,6 +2,10 @@ h2 {
   font-family: "Roboto";
   font-weight: bold; }
 
+h3 {
+  font-family: "Shrikhand";
+  font-size: 24px; }
+
 a:not(footer) {
   text-decoration: none;
   color: black; }
@@ -19,9 +23,44 @@ a:not(footer) {
   font-family: "Roboto";
   cursor: pointer; }
 
+.btn_heart {
+  border: none;
+  background-color: transparent;
+  float: right;
+  width: 20%;
+  height: 20%;
+  font-size: 150%; }
+
+.btn_heart_plein {
+  border: none;
+  background-color: transparent;
+  float: right;
+  width: 20%;
+  height: 20%;
+  font-size: 150%;
+  color: transparent; }
+
+.btn_heart:hover {
+  cursor: pointer;
+  display: none; }
+
+.btn_heart_plein:hover {
+  cursor: pointer;
+  color: #9356DC; }
+
 header {
   display: block;
   position: relative; }
+
+header a {
+  margin-left: 4%;
+  height: 90%;
+  position: absolute;
+  display: flex;
+  align-items: center; }
+
+header h1 {
+  margin: auto; }
 
 .logo {
   text-align: center;
@@ -112,11 +151,14 @@ footer {
       line-height: 25px;
       margin-left: -12px; }
 
-.fonctionnement h3 {
+.fonctionnement h4 {
   margin-left: 20px; }
 
 .fonctionnement i {
   margin-left: 20px; }
+
+.fa-store {
+  color: #9356DC; }
 
 .restaurants {
   margin-top: 50px;
@@ -124,6 +166,9 @@ footer {
   padding-bottom: 30px;
   background-color: #F5F0F7;
   font-family: 'Roboto'; }
+
+.restaurants h2 {
+  margin-left: 4%; }
 
 .restaurants__menu {
   margin: auto;
@@ -180,5 +225,83 @@ footer {
 .restaurants__heart__color:hover {
   cursor: pointer;
   color: #9356DC; }
+
+.img_menu img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 250px; }
+
+.menu .btn_heart {
+  margin-top: -55px; }
+
+.menu .btn_heart_plein {
+  margin-top: -55px; }
+
+.menu {
+  background-color: #F2F6F3;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+  z-index: 1;
+  margin-top: -80px;
+  position: relative; }
+
+.menu h3 {
+  width: 75%;
+  margin-left: 4%;
+  padding-top: 30px; }
+
+.menu h4 {
+  border-bottom: 2px solid green;
+  width: 40px;
+  margin-left: 4%;
+  font-family: 'Roboto';
+  padding-top: 25px; }
+
+.affichage-menu {
+  font-family: 'Roboto';
+  margin-left: 4%;
+  display: flex;
+  justify-content: space-around;
+  width: 92%;
+  height: 70px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px grey;
+  margin-bottom: 25px;
+  flex-wrap: nowrap;
+  background-color: white; }
+
+.menu_txt {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  text-overflow: ellipsis; }
+
+.menu_txt h5 {
+  margin-top: 9px;
+  font-size: 18px;
+  width: 140%; }
+
+.menu_txt p {
+  margin-top: -15px;
+  width: 140%;
+  height: 50px; }
+
+.menu_tarif {
+  width: auto;
+  height: 20px;
+  margin-top: 40px;
+  margin-left: 60px;
+  font-weight: bold; }
+
+.commander {
+  padding-top: 15px;
+  padding-bottom: 50px; }
+
+.button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */
