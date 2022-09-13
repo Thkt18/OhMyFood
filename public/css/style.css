@@ -1,3 +1,38 @@
+#loading-spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 120;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading linear forwards;
+  animation-duration: 1.5s;
+  background-color: #FAFAFA; }
+  #loading-spinner i {
+    font-size: 5rem;
+    animation: spinner linear forwards;
+    animation-duration: 3s; }
+
+@keyframes loading {
+  0% {
+    z-index: 2000; }
+  99% {
+    z-index: 2000; }
+  100% {
+    z-index: -1000; } }
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    color: #9356DC; }
+  50% {
+    transform: rotate(180deg);
+    color: #FF79DA; }
+  99% {
+    transform: rotate(360deg);
+    color: #99E2D0; }
+  100% {
+    color: #0000; } }
 h2 {
   font-family: "Roboto";
   font-weight: bold; }
@@ -21,7 +56,14 @@ a:not(footer) {
   cursor: pointer;
   font-size: 16px;
   font-family: "Roboto";
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: 5px 2px 2px #DEE1DF;
+  transition-property: transform;
+  transition-duration: 400ms; }
+  .button:hover {
+    filter: brightness(105%);
+    transform: scale(1.15);
+    box-shadow: 10px 5px 5px #DEE1DF; }
 
 .btn_heart {
   border: none;
@@ -47,6 +89,29 @@ a:not(footer) {
 .btn_heart_plein:hover {
   cursor: pointer;
   color: #9356DC; }
+
+.restaurants__heart {
+  border: none;
+  background-color: transparent;
+  float: right;
+  width: 20%;
+  height: 20%;
+  font-size: 150%;
+  margin-top: -55px; }
+
+.restaurants__heart__color {
+  border: none;
+  background-color: transparent;
+  float: right;
+  width: 20%;
+  height: 20%;
+  font-size: 150%;
+  margin-top: -55px;
+  color: transparent; }
+
+.restaurants__heart:hover {
+  cursor: pointer;
+  display: none; }
 
 header {
   display: block;
@@ -238,7 +303,7 @@ footer {
   margin-top: -55px; }
 
 .menu {
-  background-color: #F2F6F3;
+  background-color: #F5F0F7;
   height: auto;
   border-radius: 20px 20px 0 0;
   z-index: 1;
