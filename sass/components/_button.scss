@@ -10,6 +10,15 @@
     font-size: 16px;
     font-family: "Roboto"; 
     cursor: pointer;
+    box-shadow: 5px 2px 2px $couleur_ombre_bouton;
+    transition-property: transform;
+    transition-duration: 400ms;
+
+        &:hover {
+            filter: brightness(105%);
+            transform: scale(1.15);
+            box-shadow: 10px 5px 5px $couleur_ombre_bouton;
+    }
 }
 
 .btn_heart {
