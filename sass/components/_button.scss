@@ -21,6 +21,11 @@
     }
 }
 
+.fonctionnement__card:hover {
+    filter: brightness(104%);
+    box-shadow: 10px 5px 5px $couleur_ombre_bouton;
+}
+
 .btn_heart {
     border: none;
     background-color: transparent;
@@ -49,3 +54,34 @@
     cursor: pointer;
     color: #9356DC;
 }
+
+.restaurants__heart {
+    border: none;
+    background-color: transparent;
+    float: right;
+    width: 20%;
+    height: 20%;
+    font-size: 150%;
+    margin-top: -55px;
+}
+
+.restaurants__heart__color {
+    border: none;
+    background-color: transparent;
+    float: right;
+    width: 20%;
+    height: 20%;
+    font-size: 150%;
+    margin-top: -55px;
+    color: transparent;
+}
+
+.restaurants__heart:hover {
+    cursor: pointer;
+    display: none;
+}
+
+.restaurants__heart__color:hover {
+    color: $color_primaire;
+}
+

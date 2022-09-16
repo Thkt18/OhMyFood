@@ -13,7 +13,7 @@
 }
   
 .menu {
-    background-color:#F2F6F3;
+    background-color:$couleur_background_restaurants;
     height: auto;
     border-radius: 20px 20px 0 0;
     z-index: 1;
@@ -35,47 +35,48 @@
     padding-top: 25px;
 }
 
-.affichage-menu {
+.affichage_menu {
     font-family: 'Roboto';
-    margin-left: 4%;
-    display: flex;
-    justify-content: space-around;
-    width: 92%;
-    height: 70px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 1px 1px grey;
-    margin-bottom: 25px;
-    flex-wrap: nowrap;
     background-color: white;
-}
-
-.menu_txt {
-    width: 60%;
+    padding: 15px;
     display: flex;
-    flex-direction: column;
-    margin-left: -10px;
-    text-overflow: ellipsis;
-}
+    border-radius: 15px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+    overflow: hidden;
 
-.menu_txt h5 {
-    margin-top: 9px;
-    font-size: 18px;
-    width: 140%;
-}
+    &__txt {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
 
-.menu_txt p {
-    margin-top: -15px;
-    width: 140%;
-    height: 50px;
-}
+    &__tarif {
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 10px;
+        margin-right: 20px;
+    }
 
+    &__h5 {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 17px;
+    }
 
-.menu_tarif {
-    width: auto;
-    height: 20px;
-    margin-top: 40px;
-    margin-left: 60px;
-    font-weight: bold;
+    &__p {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 15px;
+    }
 }
 
 .commander {
@@ -89,3 +90,4 @@
     display: flex;
     margin: auto;
 }
+

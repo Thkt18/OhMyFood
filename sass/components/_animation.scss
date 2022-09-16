@@ -41,21 +41,45 @@
   }
 }
 
+.affichage_menu {
+    &__animationcheck {
+        background-color: $color_tertiaire;
+        border: none;
+        margin:  -20px -120px -20px 16px;
+        width: 80px;
+        height: 80px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.5s;
+    }
 
+    &__animationcheck_i {
+        font-size: 130%;
+        height: 16px;
+        width: 16px;
+        background-color: $color_tertiaire;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.8s;
+    }
 
+    &__animationcheck_check {
+        color: white;
+    }
 
-.affichage-menu {
-    .animation_check {
-        border: 3px solid blue;
-        align-items: center;
-        display: flex;
-        width: 12%;
-        font-size: x-large;
-        justify-content: center;
-        display: none;
-        &:hover {
-            display: flex;
-            position: relative;
-        }
+    &:hover &__animationcheck {
+        margin-right: -20px;
+        width: 80px;
+        cursor: pointer;
+    }
+
+    &:hover &__animationcheck_i {
+        transform: rotate(0);
     }
 }
+
+
