@@ -1,3 +1,5 @@
+// Bouton Commander page menu
+
 .button {
     width: 220px;
     height: 45px;
@@ -21,11 +23,22 @@
     }
 }
 
+// Fonctionnement hover
+
 .fonctionnement__card:hover {
     filter: brightness(104%);
     box-shadow: 10px 5px 5px $couleur_ombre_bouton;
+    background-color: $background_color_fonctionnement_hover;
+    
+    .fonctionnement__card__i {
+        color: $color_primaire;
+    }
 }
 
+// Coeur page menu
+
+
+// TEST COEUR
 .btn_heart {
     border: none;
     background-color: transparent;
@@ -37,13 +50,19 @@
   
 .btn_heart_plein {
     border: none;
-    background-color: transparent;
     float: right;
     width: 20%;
     height: 20%;
     font-size: 150%;
+    background-color: transparent;
     color: transparent;
 }
+
+
+
+
+
+
 
 .btn_heart:hover {
     cursor: pointer;
@@ -54,6 +73,8 @@
     cursor: pointer;
     color: #9356DC;
 }
+
+// Coeur page index 
 
 .restaurants__heart {
     border: none;
