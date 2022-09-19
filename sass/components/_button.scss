@@ -1,13 +1,13 @@
 // Bouton Commander page menu
 
 .button {
-    width: 220px;
-    height: 45px;
-    border-radius: 20px;
+    width: 210px;
+    height: 55px;
+    border-radius: 25px;
     border: none;
     color: white;
     font-weight: bold;
-    background: linear-gradient(to right bottom, #9356DC, #FF79DA);
+    background: $couleur_degrade;
     cursor: pointer;
     font-size: 16px;
     font-family: "Roboto"; 
@@ -27,7 +27,7 @@
 
 .fonctionnement__card:hover {
     filter: brightness(104%);
-    box-shadow: 10px 5px 5px $couleur_ombre_bouton;
+    @include box-shadow-card-fonctionnement-hover;
     background-color: $background_color_fonctionnement_hover;
     
     .fonctionnement__card__i {
@@ -35,48 +35,9 @@
     }
 }
 
-// Coeur page menu
+// Coeur
 
-
-// TEST COEUR
-.btn_heart {
-    border: none;
-    background-color: transparent;
-    float: right;
-    width: 20%;
-    height: 20%;
-    font-size: 150%;
-}
-  
-.btn_heart_plein {
-    border: none;
-    float: right;
-    width: 20%;
-    height: 20%;
-    font-size: 150%;
-    background-color: transparent;
-    color: transparent;
-}
-
-
-
-
-
-
-
-.btn_heart:hover {
-    cursor: pointer;
-    display: none;
-}
-
-.btn_heart_plein:hover {
-    cursor: pointer;
-    color: #9356DC;
-}
-
-// Coeur page index 
-
-.restaurants__heart {
+.heart {
     border: none;
     background-color: transparent;
     float: right;
@@ -84,25 +45,23 @@
     height: 20%;
     font-size: 150%;
     margin-top: -55px;
+
+    &__color {
+        border: none;
+        float: right;
+        width: 20%;
+        height: 20%;
+        font-size: 150%;
+        background-color: transparent;
+        color: transparent;
+        margin-top: -55px;
+    }
 }
 
-.restaurants__heart__color {
-    border: none;
-    background-color: transparent;
-    float: right;
-    width: 20%;
-    height: 20%;
-    font-size: 150%;
-    margin-top: -55px;
-    color: transparent;
-}
 
-.restaurants__heart:hover {
+.heart:hover {
     cursor: pointer;
-    display: none;
+
 }
 
-.restaurants__heart__color:hover {
-    color: $color_primaire;
-}
 

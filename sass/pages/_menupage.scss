@@ -1,15 +1,15 @@
 .img_menu img{
     object-fit: cover;
     width: 100%;
-    max-height: 250px;
+    max-height: 300px;
 }
 
-.menu .btn_heart {
+.menu .heart {
     margin-top: -55px;
-}
-  
-.menu .btn_heart_plein {
-    margin-top: -55px;
+
+    &_plein {
+        margin-top: -55px;
+    }
 }
   
 .menu {
@@ -17,14 +17,14 @@
     height: auto;
     border-radius: 20px 20px 0 0;
     z-index: 1;
-    margin-top: -80px;
+    margin-top: -50px;
     position: relative;
 }
 
 .menu h3 {
         width: 75%;
         margin-left: 4%;
-        padding-top: 30px;
+        padding-top: 35px;
 }
 
 .menu h4 {
@@ -80,8 +80,8 @@
 }
 
 .commander {
-    padding-top: 15px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 .button {

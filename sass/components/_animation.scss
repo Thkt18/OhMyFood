@@ -115,20 +115,39 @@
 // Animation coeur test la palette du gout
 
 .menu {
-    .coeur_plein:hover {
-        animation: coeur_plein_progress 1000ms;
+    .heart__color:hover {
+        animation-duration: 1000ms;
+        animation-name: coeur_plein_progress;
+        animation-fill-mode: forwards;
+        cursor: pointer;
     }
 }
 
-@keyframes coeur_plein_progress{
+.restaurants__menu {
+        .heart__color:hover {
+        animation-duration: 1000ms;
+        animation-name: coeur_plein_progress;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+    }
+}
+
+@keyframes coeur_plein_progress {
     0% {
         transform: scaleY(0);
         opacity: 0;
     }
 
+    50% {
+        transform: scaleY(1);
+        opacity: 1;
+        color: #FF79DA;
+    }
+
     100% {
         transform: scaleY(1);
         opacity: 1;
-        color: $couleur_degrade;
+        color: #9356DC;
+        
     }
 }

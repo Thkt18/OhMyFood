@@ -4,8 +4,6 @@ header {
     box-shadow: 0 5px 5px -5px grey;
 }
 
-
-
 header a {
     margin-left: 4%;
     height: 90%;
@@ -16,6 +14,8 @@ header a {
 
 header h1 {
     margin: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .logo {
@@ -28,7 +28,7 @@ footer {
     color: white;
     width: 100%;
     font-family: 'Roboto';
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     margin-top: -14px;
 
         a {
@@ -40,10 +40,10 @@ footer {
             }
 
                 img {
-                    width: 130px;
+                    width: 100px;
                     margin-left: 4%;
                     margin-bottom: 20px;
-                    margin-top: 20px;
+                    margin-top: 30px;
                 }
 
                     i {
@@ -57,10 +57,10 @@ footer {
 
 
     .footer__icone {
-        width: 80%;
+        width: 60%;
         align-items: center;
         vertical-align: middle;
-        display: inline-flex;
+        display: flex;
         height: 18px;
         margin-bottom: 10px;
         margin-left: 4%;
