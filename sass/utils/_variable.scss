@@ -13,27 +13,3 @@ $couleur_ombre_bouton: #DEE1DF;
 $couleur_degustez: #ECCDF7;
 $couleur_background_nouveau: #a9e0d1;
 $couleur_txt_nouveau: #3b8468; 
-
-
-@mixin box-shadow-card-fonctionnement {
-    box-shadow: 1px 1px 1px 1px grey;
-}
-
-@mixin box-shadow-card-fonctionnement-hover {
-    box-shadow: 10px 5px 5px $couleur_ombre_bouton;
-}
-
-@mixin taille-numero-fonctionnement {
-    width: 25px;
-    height: 25px;
-}
-
-@mixin taille-restaurant-menu-home {
-    width: 90%;
-    height: 250px;
-}
-
-@mixin taille-img-restaurant-menu-home {
-    width: 100%;
-    height: 180px;
-}
