@@ -40,6 +40,7 @@
 .fonctionnement {
     font-family: 'Roboto';
     margin-bottom: 80px;
+    margin: 0 4% 0 4%;
 
     &__card {
         margin-left: 4%;
@@ -92,6 +93,7 @@
     background-color: $couleur_background_restaurants;
     font-family: 'Roboto';
 }
+
 
 .restaurants h2 {
     margin-left: 4%;

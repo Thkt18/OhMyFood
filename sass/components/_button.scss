@@ -1,3 +1,32 @@
+// Boutton index 
+
+.button__explorer {
+    width: 210px;
+    height: 55px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background: $couleur_degrade;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto"; 
+    cursor: pointer;
+    box-shadow: 5px 2px 2px $couleur_ombre_bouton;
+    transition-property: transform;
+    transition-duration: 400ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover {
+        filter: brightness(105%);
+        transform: scale(1.15);
+        box-shadow: 10px 5px 5px $couleur_ombre_bouton;
+    }
+}
+
+
 // Bouton Commander page menu
 
 .button {
@@ -29,6 +58,7 @@
     filter: brightness(104%);
     @include box-shadow-card-fonctionnement-hover;
     background-color: $background_color_fonctionnement_hover;
+    cursor: pointer;
     
     .fonctionnement__card__i {
         color: $color_primaire;
@@ -45,23 +75,30 @@
     height: 20%;
     font-size: 150%;
     margin-top: -55px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
 
     &__color {
-        border: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
         float: right;
         width: 20%;
         height: 20%;
         font-size: 150%;
-        background-color: transparent;
-        color: transparent;
         margin-top: -55px;
+        opacity: 0;
+        transform: opacity (1);
+        transition-property: transform;
+        transition-duration: 1000ms;
+        border: none;
+        background: $couleur_degrade_coeur;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 }
-
-
-.heart:hover {
-    cursor: pointer;
-
-}
-
 
