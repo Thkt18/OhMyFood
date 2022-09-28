@@ -22,9 +22,9 @@
 }
 
 .menu h3 {
-        width: 75%;
-        margin-left: 4%;
-        padding-top: 35px;
+    width: 75%;
+    margin-left: 4%;
+    padding-top: 35px;
 }
 
 .menu h4 {
@@ -89,5 +89,30 @@
     justify-content: center;
     display: flex;
     margin: auto;
+}
+
+.affichage_menu__entrees {
+    @media (min-width: 650px) {
+        width: 30%;
+    }
+}
+
+.affichage_menu__plats {
+    @media (min-width: 650px) {
+        width: 30%;
+    }
+}
+
+.affichage_menu__desserts {
+    @media (min-width: 650px) {
+        width: 30%;
+    }
+}
+
+.affichage {
+    @media (min-width: 650px) {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
