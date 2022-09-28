@@ -92,12 +92,20 @@
     padding-bottom: 30px;
     background-color: $couleur_background_restaurants;
     font-family: 'Roboto';
+    @media (min-width: 650px) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+    }
 }
 
 
 .restaurants h2 {
     margin-left: 4%;
     margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
 }
 
 
@@ -111,12 +119,29 @@
     flex-wrap: nowrap;
     cursor: default;
     position: relative;
+    width: 92%;
+    height: 254px;
+
+    @media (min-width: 650px) {
+        display: block;
+        width: 45%;
+        height: 280px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
 
     &__img {
         @include taille-img-restaurant-menu-home;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
-        z-index: 2;
+        width: 100%;
+
+        @media (min-width: 650px) {
+            width: 100%;
+            height: 75%;
+            object-fit: cover;
+        }
     }
 
     &__nouveau {
@@ -136,6 +161,9 @@
 .restaurants__footer__txt {
     margin-left: 4%;
     width: 50%;
+    @media (min-width: 650px) {
+        width: 100%;
+    }
 
     &__title {
         margin-top: 8px;
