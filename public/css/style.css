@@ -62,22 +62,43 @@
 .affichage_menu:hover .affichage_menu__animationcheck_i {
   transform: rotate(0); }
 
-.menu .affichage_menu__entrees {
-  animation: affichage_menu_progres 300ms 100ms; }
-.menu .affichage_menu__plats {
-  animation: affichage_menu_progres 600ms 200ms; }
-.menu .affichage_menu__desserts {
-  animation: affichage_menu_progres 900ms 400ms; }
-.menu .affichage_menu {
-  animation: affichage_menu_progres 900ms 400ms; }
+.menuanim__1 {
+  animation: menu__animation 0.8s 0.2s backwards ease; }
 
-@keyframes affichage_menu_progres {
+.menuanim__2 {
+  animation: menu__animation 0.8s 0.4s backwards ease; }
+
+.menuanim__3 {
+  animation: menu__animation 0.8s 0.6s backwards ease; }
+
+.menuanim__4 {
+  animation: menu__animation 0.8s 0.8s backwards ease; }
+
+.menuanim__5 {
+  animation: menu__animation 0.8s 1s backwards ease; }
+
+.menuanim__6 {
+  animation: menu__animation 0.8s 1.2s backwards ease; }
+
+.menuanim__7 {
+  animation: menu__animation 0.8s 1.4s backwards ease; }
+
+.menuanim__8 {
+  animation: menu__animation 0.8s 1.6s backwards ease; }
+
+.menuanim__9 {
+  animation: menu__animation 0.8s 1.8s backwards ease; }
+
+.menuanim__10 {
+  animation: menu__animation 0.8s 2s backwards ease; }
+
+@keyframes menu__animation {
   from {
-    transform: scaleY(0);
-    opacity: 0; }
+    opacity: 0;
+    transform: translateY(25px); }
   to {
-    transform: scaleY(1);
-    opacity: 1; } }
+    opacity: 1;
+    transform: translateY(0px); } }
 .menu .heart__color:hover {
   animation-duration: 1000ms;
   animation-name: coeur_plein_progress;

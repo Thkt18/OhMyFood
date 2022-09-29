@@ -84,34 +84,30 @@
     }
 }
 
-// Animation menu
 
-.menu {
-    .affichage_menu__entrees {
-        animation: affichage_menu_progres 300ms 100ms;
-    }
-    .affichage_menu__plats {
-        animation: affichage_menu_progres 600ms 200ms;
-    }
-    .affichage_menu__desserts {
-        animation: affichage_menu_progres 900ms 400ms;
-    }
-    .affichage_menu {
-        animation: affichage_menu_progres 900ms 400ms;
+// Animation menu apparition
+
+
+@for $i from 1 through 10 {
+    .menuanim__#{$i} {
+        animation: menu__animation 0.8s 0.2s*$i backwards ease;
     }
 }
 
-@keyframes affichage_menu_progres{
-    from {
-        transform: scaleY(0);
-        opacity: 0;
-    }
 
-    to {
-        transform: scaleY(1);
-        opacity: 1;
-    }
+@keyframes menu__animation {
+from {
+    opacity: 0;
+    transform: translateY(25px);
 }
+
+to {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+
+
 
 // Animation coeur
 
