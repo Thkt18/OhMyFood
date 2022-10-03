@@ -27,7 +27,7 @@
   99% {
     color: #99E2D0;
     transform: scale(1.5);
-    z-index: 2000;
+    z-index: 1;
     opacity: 1; }
   100% {
     opacity: 0;
